@@ -1,6 +1,6 @@
 {
   "name": "manipulate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript helper functions and React components",
   "main": "./distribution/index.js",
   "scripts": {
