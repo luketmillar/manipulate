@@ -14,7 +14,7 @@ $ npm i --save manipulate
 
 Example Input Object
 
-```JavaScript
+```javascript
 const usersById = {
   ltm: {
     name: 'Luke Millar',
@@ -36,12 +36,12 @@ const usersById = {
 
 ## Filter
 
-```JavaScript
+```javascript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
-    .filter(({ value }, index, usersById) => value.isAdmin)
-    .value()
+  .filter(({ value }, index, usersById) => value.isAdmin)
+  .value()
 
 /*
 RESULT
@@ -62,12 +62,12 @@ RESULT
 
 ## Map
 
-```JavaScript
+```javascript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
-    .map(({ key, value }, index, usersById) => value.name)
-    .value()
+  .map(({ key, value }, index, usersById) => value.name)
+  .value()
 
 /*
 RESULT
@@ -81,12 +81,12 @@ RESULT
 
 ## Reduce
 
-```JavaScript
+```javascript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
-    .reduce((totalFollowers, { key, value }, index, usersById) => totalFollowers + value.followers, 0)
-    .value()
+  .reduce((totalFollowers, { key, value }, index, usersById) => totalFollowers + value.followers, 0)
+  .value()
 
 /*
 RESULT
@@ -96,25 +96,24 @@ RESULT
 
 ## ForEach
 
-```JavaScript
+```javascript
 const Manipulate = require('manipulate')
 
-Manipulate(usersById)
-    .forEach(({ key, value }) => {
-        console.log(key)
-    })
+Manipulate(usersById).forEach(({ key, value }) => {
+  console.log(key)
+})
 ```
 
 ## Chaining
 
-```JavaScript
+```javascript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
-      .filter(({ value }) => value.isAdmin)
-      .map(({ value }) => value.followers)
-      .reduce((totalFollowers, { value: followers }) => totalFollowers + followers, 0)
-      .value()
+  .filter(({ value }) => value.isAdmin)
+  .map(({ value }) => value.followers)
+  .reduce((totalFollowers, { value: followers }) => totalFollowers + followers, 0)
+  .value()
 
 /*
 RESULT
