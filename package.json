@@ -1,0 +1,33 @@
+{
+  "name": "manipulate",
+  "version": "0.0.1",
+  "description": "Javascript helper functions and React components",
+  "main": "./distribution/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir distribution",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luketmillar/manipulate.git"
+  },
+  "author": "@ltm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luketmillar/manipulate/issues"
+  },
+  "homepage": "https://github.com/luketmillar/manipulate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^23.5.0",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "dependencies": {}
+}
