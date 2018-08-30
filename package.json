@@ -1,6 +1,6 @@
 {
   "name": "manipulate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Expose array manipulation functions on javascript objects",
   "main": "./distribution/index.js",
   "scripts": {
