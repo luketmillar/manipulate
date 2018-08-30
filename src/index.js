@@ -1,2 +1,1 @@
-import Manipulate from './object'
-export default Manipulate
+export { default as Manipulate } from './object'

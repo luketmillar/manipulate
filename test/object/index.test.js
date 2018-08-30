@@ -1,4 +1,4 @@
-import Manipulate from ''
+import { Manipulate } from ''
 
 const usersById = {
   ltm: {

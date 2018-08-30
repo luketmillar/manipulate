@@ -37,7 +37,7 @@ const usersById = {
 ## Filter
 
 ```javascript
-const Manipulate = require('manipulate')
+import { Manipulate } from 'manipulate'
 
 Manipulate(usersById)
   .filter(({ value }, index, usersById) => value.isAdmin)
@@ -63,7 +63,7 @@ RESULT
 ## Map
 
 ```javascript
-const Manipulate = require('manipulate')
+import { Manipulate } from 'manipulate'
 
 Manipulate(usersById)
   .map(({ key, value }, index, usersById) => value.name)
@@ -82,7 +82,7 @@ RESULT
 ## Reduce
 
 ```javascript
-const Manipulate = require('manipulate')
+import { Manipulate } from 'manipulate'
 
 Manipulate(usersById)
   .reduce((totalFollowers, { key, value }, index, usersById) => totalFollowers + value.followers, 0)
@@ -97,7 +97,7 @@ RESULT
 ## ForEach
 
 ```javascript
-const Manipulate = require('manipulate')
+import { Manipulate } from 'manipulate'
 
 Manipulate(usersById).forEach(({ key, value }) => {
   console.log(key)
@@ -107,7 +107,7 @@ Manipulate(usersById).forEach(({ key, value }) => {
 ## Chaining
 
 ```javascript
-const Manipulate = require('manipulate')
+import { Manipulate } from 'manipulate'
 
 Manipulate(usersById)
   .filter(({ value }) => value.isAdmin)
