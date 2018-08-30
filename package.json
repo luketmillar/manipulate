@@ -1,7 +1,7 @@
 {
   "name": "manipulate",
   "version": "0.0.4",
-  "description": "Javascript helper functions and React components",
+  "description": "Expose array manipulation functions on javascript objects",
   "main": "./distribution/index.js",
   "scripts": {
     "test": "jest",
