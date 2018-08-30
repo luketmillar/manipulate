@@ -14,7 +14,7 @@ $ npm i --save manipulate
 
 Example Input Object
 
-```
+```JavaScript
 const usersById = {
   ltm: {
     name: 'Luke Millar',
@@ -36,7 +36,7 @@ const usersById = {
 
 ## Filter
 
-```
+```JavaScript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
@@ -62,7 +62,7 @@ RESULT
 
 ## Map
 
-```
+```JavaScript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
@@ -81,7 +81,7 @@ RESULT
 
 ## Reduce
 
-```
+```JavaScript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
@@ -96,7 +96,7 @@ RESULT
 
 ## ForEach
 
-```
+```JavaScript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
@@ -107,7 +107,7 @@ Manipulate(usersById)
 
 ## Chaining
 
-```
+```JavaScript
 const Manipulate = require('manipulate')
 
 Manipulate(usersById)
